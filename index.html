@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incryptor</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container p-md-0">
+        <div class="row w-100 d-flex align-items-center justify-content-center ">
+            <div class="col-xl-6 col-md-8 col-sm-12 p-0">
+                <div class="card border-0 w-100">
+                    <div class="card-body p-md-0">
+                        <div class="w-100 text-white p-3 text-center d-flex align-items-center justify-content-center mb-3"
+                            style="background:#6f42c1 ;">
+                            <h5 class="card-title mb-0">Text Incryptor/Decryptor</h5>
+                        </div>
+                        <div>
+                            <div class="form-floating  mb-3" id="input_div">
+                                <input type="text" class="form-control" id="normal_text" placeholder="Enter Text Here">
+                                <label for="floatingInput" id="normal_text_lable">Enter Text Here</label>
+                                <label class="" stlyle="float:right;"></label>
+                            </div>
+                            <div class="form-floating" id="input_div">
+                                <!-- <input type="text" class="form-control" id="result" placeholder="Password">
+                                <label id="copy"><i class="fa-regular fa-copy"></i></label> -->
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control p-3" id="result"
+                                        aria-describedby="basic-addon2" readonly>
+                                    <span class="input-group-text d-none copybtn" id="liveToastBtn"><i
+                                            class="fa-regular fa-copy" onclick="myFunction()"
+                                            ></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-6" id="incrypt_btn_div"> <button class="btn w-100 p-2" type="button"
+                                    id="incrypt_btn">Incrypt</button>
+                            </div>
+                            <div class="col-6"><button class="btn w-100 p-2" type="button"
+                                    id="decrypt_btn">Decrypt</button></div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-12"><button class="btn w-100 p-2" type="button" id="clear_btn">Clear
+                                    All</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- toster start-->
+    <!-- Flexbox container for aligning the toasts -->
+
+    <div class="position-fixed top-0 center-0 p-3" style="z-index: 11">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+           
+            <div class="toast-body">
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close" style="float:right;"></button>
+                <div id="copieditem" style="font-size:15px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- toster end -->
+    <!-- scripts start -->
+    <script src="assets/fontAwesome.js"></script>
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap/bootstrap.js"></script>
+    <script src="bootstrap/bootstrap.min.css"></script>
+    <script src="bootstrap/popper.min.js"></script>
+    <script src="assets/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
+    <!-- scripts start -->
+
+</body>
+
+</html>
